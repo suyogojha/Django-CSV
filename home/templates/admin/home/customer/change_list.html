@@ -1,0 +1,22 @@
+{% extends "admin/change_list.html" %} {% load static %} {% block content %}
+
+
+
+
+
+<button style="padding: 15px; margin:15px; background-color:black; border:2px solid yellow;">
+  <a href="upload-csv/" style="color: rgb(42, 29, 229);">
+      Upload Csv here
+  </a>
+</button>
+
+<button style="padding: 15px; margin:15px;background-color:black; border:2px solid yellow;">
+    <a href="/export-to-csv/" style="color: rgb(0, 26, 255);">
+        Export Csv Here
+    </a>
+  </button>
+
+
+
+
+{{block.super}} {% endblock %}
